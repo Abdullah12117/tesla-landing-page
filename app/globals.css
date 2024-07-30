@@ -17,13 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
 }
 
 @layer utilities {
@@ -31,3 +25,24 @@ body {
     text-wrap: balance;
   }
 }
+
+h1{
+  text-align: center;
+  color: #171a20;
+
+}
+.heading{
+  color: #171a20;
+  text-align: center;
+}
+/* In your global styles or component-specific CSS file */
+.header-transition {
+  transition: transform 0.3s ease-in-out;
+}
+.header-hidden {
+  transform: translateY(-100%);
+}
+.header-visible {
+  transform: translateY(0);
+}
+

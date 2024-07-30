@@ -1,113 +1,139 @@
 import Image from "next/image";
-
+import Head from "next/head";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+    <section className="bg-main-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12">Model 3</h1>
+        <h3 className="lg:text-2xl text-1xl pt-2 font-semibold">$7,500 Federal Tax Credit Available</h3>
+        <a href="https://www.tesla.com/model3/design?financeModalTab=finance_options#overview" className="lg:text-2xl text-1xl underline decoration-1 underline-offset-3">
+          From $29,990 After Est. Savings
+        </a>
+
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Demo Drive</a>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    </section>
+    <section className="bg-2nd-bg bg-cover bg-center min-h-screen flex flex-col">
+    <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-10">Model Y</h1>
+        <div className="flex items-center justify-center pt-2">
+        <a href="https://www.tesla.com/modely/design?financeModalTab=finance_options&financeProduct=finplat.AUTO_LOAN%3ALOAN%3ACT_PRIVATE#overview" className="lg:text-2xl text-1xl pt-2 font-semibold underline decoration-1 underline-offset-3">1.99% APR Financing Ending August 21</a>
+        
+        </div>
+        <p  className="lg:text-2xl text-1xl font-semibold" >
+        From $31,490        </p>
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Demo Drive</a>
+        </div>
       </div>
+      </section>
+      <section className="bg-3rd-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12">Model X</h1>
+        <h3 className="lg:text-2xl text-1xl pt-2 font-semibold">From $65,990</h3>
+        <a href="https://www.tesla.com/modelx/design?financeModalTab=finance_options&financeProduct=cash#overview://www.tesla.com/model3/design?financeModalTab=finance_options#overview" className="lg:text-2xl text-1xl underline decoration-1 underline-offset-3">
+        After $14,000 Est. Savings  </a>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Demo Drive</a>
+        </div>
       </div>
-    </main>
+      </section>
+      <section className="bg-4th-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12 text-white">Model S</h1>
+        <h3 className="lg:text-2xl text-1xl pt-2 font-semibold text-white">From $68,490</h3>
+        <a href="https://whttps://www.tesla.com/models/design?financeModalTab=finance_options&financeProduct=cash#overviewww.tesla.com/modelx/design?financeModalTab=finance_options&financeProduct=cash#overview://www.tesla.com/model3/design?financeModalTab=finance_options#overview" className="lg:text-2xl text-1xl underline decoration-1 underline-offset-3 text-customeGrey">
+        After $65,00 Est. Savings  </a>
+
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Demo Drive</a>
+        </div>
+      </div>
+      </section>
+      <section className="bg-5th-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <div className="mb-4 pt-12">
+          <Image src="/icon.svg" alt="logo" width={500} height={200} />
+        
+        </div>
+
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-black-bg text-txtgrey px-20 py-3 hover:bg-gray-700 transition duration-300">Order Now</a>
+          <a href="#" className="bg-black-bg text-txtgrey px-20 py-3  hover:bg-gray-700 transition duration-300">Learn More</a>
+        </div>
+      </div>
+      </section>
+      <section className="bg-6th-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12 text-white">Solar Panels</h1>
+        <a href="https://www.tesla.com/event/schedule-virtual-energy-consultations://whttps://www.tesla.comhttps://www.tesla.com/event/schedule-virtual-energy-consultations/models/design?financeModalTab=finance_options&financeProduct=cash#overviewww.tesla.com/modelx/design?financeModalTab=finance_options&financeProduct=cash#overview://www.tesla.com/model3/design?financeModalTab=finance_options#overview" className="lg:text-2xl text-1xl underline decoration-1 underline-offset-3 text-customeGrey font-semibold">
+        Schedule a Virtual Consultation  </a>
+
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Learn More</a>
+        </div>
+      </div>
+      </section>
+      <section className="bg-7th-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12 ">Solar Roof</h1>
+        <h3 className="lg:text-2xl text-1xl pt-2 font-semibold ">Produce Clean Energy From Your Roof</h3>
+
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Learn More</a>
+        </div>
+      </div>
+      </section>
+      <section className="bg-8th-bg bg-cover bg-center min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-3xl font-bold pt-12 ">Powerwall</h1>
+        <div className="mt-auto mb-8 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">Order Now</a>
+          <a href="#" className="bg-gray-900 text-white px-20 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Learn More</a>
+        </div>
+      </div>
+      </section>
+      <section className="bg-9th-bg bg-center bg-cover min-h-screen flex flex-col">
+      <div className="text-center py-16 flex-1 flex flex-col justify-center items-center mt-18">
+        <h1 className="lg:text-5xl text-1xl font-bold pt-12 ">Accessories</h1>
+        <div className="mt-auto mb-8 flex space-x-4 justify-center">
+          <a href="#" className="bg-white text-#171a20 px-20 py-2 rounded-lg transition duration-300">shop Now</a>
+
+        </div>
+      </div>
+      </section>
+      <section className="bg-black bg-center bg-cover h-auto flex flex-col justify-between items-center">
+  <div className="text-txtgrey text-sm pt-10 lg:px-40 px-0">
+    <p className="text-center lg:px-40 px-4"> $7,500 Federal Tax Credit available for eligible buyers and subject to MSRP caps. Model 3 Rear-Wheel Drive not eligible.</p>
+    <p className="text-center lg:px-40 px-4 pt-4"> Price before estimated savings is $42,490, excluding taxes and fees. Subject to change. Estimated savings includes $5,000 in estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps. </p>
+    <p className="text-center lg:px-40 px-4 pt-4">Price before estimated savings is $44,990, excluding taxes and fees. Subject to change. Estimated savings includes $5,000 in estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps.</p>
+    <p className="text-center lg:px-40 px-4 pt-4">Price before estimated savings is $79,990, excluding taxes and fees. Subject to change. Estimated savings includes $5,000 in estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps.</p>
+    <p className="text-center lg:px-40 px-4 pt-4">Price before estimated savings is $74,990, excluding taxes and fees. Subject to change. Estimated savings includes $5,000 in estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps.</p>
+  </div>
+  <footer className="text-txtgrey font-semibold text-xs pb-4 flex flex-col items-center">
+    
+    <div className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 pt-2 pb-3 items-center">
+    <a href="#" className="hover:underline">Tesla © 2024</a>
+      <a href="#" className="hover:underline">Privacy & Legal</a>
+      <a href="#" className="hover:underline">Vehicle Recalls</a>
+      <a href="#" className="hover:underline">Contact</a>
+      <a href="#" className="hover:underline">News</a>
+      <a href="#" className="hover:underline">Get Updates</a>
+      <a href="#" className="hover:underline">Locations</a>
+    </div>
+  </footer>
+</section>
+
+    </div>
   );
 }
